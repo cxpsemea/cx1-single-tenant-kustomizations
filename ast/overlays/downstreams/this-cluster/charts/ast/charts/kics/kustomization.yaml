@@ -1,0 +1,29 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+bases:
+- ../../../../../../midstream/charts/ast/charts/kics
+kind: Kustomization
+patches:
+- target:
+    name: ast-kics-manager
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-kics-manager-patch.yaml
+- target:
+    name: ast-kics-metadata
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-kics-metadata-patch.yaml
+- target:
+    name: ast-kics-results-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-kics-results-processor-patch.yaml
+- target:
+    name: ast-kics-results
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-kics-results-patch.yaml

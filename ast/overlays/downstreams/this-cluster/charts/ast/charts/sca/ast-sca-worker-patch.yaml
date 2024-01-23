@@ -1,3 +1,0 @@
-- op: replace
-  path: /spec/scale/static/count
-  value: 0
