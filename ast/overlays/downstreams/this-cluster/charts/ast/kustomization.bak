@@ -1,0 +1,293 @@
+#apiVersion: kustomize.config.k8s.io/v1beta1
+#bases:
+#- ../../../../midstream/charts/ast
+#kind: Kustomization
+#patches:
+- target:
+    name: ast-sast-queries
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-audit-webapp-mf
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-results-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-audit-trail-consumer
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-data-retention
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-datastore
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-metadata
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-logs
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-results-inc-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-configuration
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-scans-statistics
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-meta-processor-inc
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-mfe
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-policy-management-mfe
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-repostore
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-reports-api
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-audit-trail-api
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-results-writer
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-host-webapp
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-repos-manager
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-scans
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-meta-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-events
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-flow-listener
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-policy-management-sast-mfe
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-migration-consumer
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-audit-trail-cronjob
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-contributors
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-flow-publisher
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-feature-flag
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-mfe
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-access-management-webapp-mf
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-results-overview
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-feedback-app
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-rm
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-reports-processing
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-discovery
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-access-management
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-policy-management-kics
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-risk-management
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-uploads
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-migration-webapp-mf
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-results
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-integrations-feedback-mfe
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-policy-management-sast
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-sast-migration-http
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-policy-management
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml
+- target:  
+    name: ast-core-logs
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: single-scale.yaml

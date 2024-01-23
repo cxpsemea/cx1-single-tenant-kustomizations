@@ -1,0 +1,9 @@
+- op: replace
+  path: /spec/camunda-platform/zeebe/partitionCount
+  value: 2
+- op: replace
+  path: /spec/camunda-platform/zeebe/clusterSize
+  value: 2
+- op: replace
+  path: /spec/camunda-platform/zeebe-gateway/replicas
+  value: 2
