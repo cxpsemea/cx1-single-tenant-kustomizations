@@ -1,0 +1,125 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+bases:
+- ../../../../../../midstream/charts/ast/charts/sca
+kind: Kustomization
+patches:
+- target:
+    name: ast-sca-comments
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-comments-patch.yaml
+- target:
+    name: ast-sca-container-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-container-processor-patch.yaml
+- target:
+    name: ast-sca-export
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-export-patch.yaml
+- target:
+    name: ast-sca-global-inventory
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-global-inventory-patch.yaml
+- target:
+    name: ast-sca-graphql
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-graphql-patch.yaml
+- target:
+    name: ast-sca-management-of-risk
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-management-of-risk-patch.yaml
+- target:
+    name: ast-sca-image-resolver-orchestrator
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-image-resolver-orchestrator-patch.yaml
+- target:
+    name: ast-sca-packages-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-packages-processor-patch.yaml
+- target:
+    name: ast-sca-policy-management
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-policy-management-patch.yaml
+- target:
+    name: ast-sca-private-dependencies-engine
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-private-dependencies-engine-patch.yaml
+- target:
+    name: ast-sca-private-dependencies-repository
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-private-dependencies-repository-patch.yaml
+- target:
+    name: ast-sca-projects
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-projects-patch.yaml
+- target:
+    name: ast-sca-proxy
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-proxy-patch.yaml
+- target:
+    name: ast-sca-results-processor
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-results-processor-patch.yaml
+- target:
+    name: ast-sca-sast-correlation
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-sast-correlation-patch.yaml
+- target:
+    name: ast-sca-scan-results
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-scan-results-patch.yaml
+- target:
+    name: ast-sca-scan-runner
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-scan-runner-patch.yaml
+- target:
+    name: ast-sca-source-resolver
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-source-resolver-patch.yaml
+- target:
+    name: ast-sca-webapp
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-webapp-patch.yaml
+- target:
+    name: ast-sca-worker
+    kind: Microservice
+    group: ast.checkmarx.com
+    version: v1
+  path: ast-sca-worker-patch.yaml
